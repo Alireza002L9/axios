@@ -1,0 +1,134 @@
+.review-section {
+  height: 80vh;
+  /* width: 100vw; */
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.btns-section button{
+  border: 2px solid black;
+  background: transparent;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-bottom: none;
+  font-size: 1.5rem;
+}
+.active, .btns-section button:hover {
+  background: #000 !important;
+  color: white;
+  transition: all 0.3s;
+}
+
+.btns-section button:nth-child(1) {
+  border-right: none;
+}
+.review-parts {
+  padding: 3rem;
+  border: 2px solid black;
+  width: 25vw;
+
+}
+
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.form-container button {
+  align-self: center;
+  padding: 1rem 4rem;
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: large;
+  margin-top: 1rem;
+}
+.form-container button:hover {
+  background-color: #000;
+  color: white;
+}
+
+.form-container input, textarea {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 1rem 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+
+}
+textarea {
+  resize: none;
+}
+.form-container label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.form-container label p:nth-child(1) {
+  padding-top: 1;
+}
+.form-container label p:nth-child(2) {
+  color: red;
+}
+.succesSubmit {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  right: 0;
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #000;
+  color: white;
+  border-radius: 999px;
+  text-align: center;
+  padding: .5rem 1rem;
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+.reviews-parent {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: auto;
+  overflow-x: hidden;
+  max-height: 32rem;
+  
+
+}
+.review-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 90%;
+  border-right: 1px solid black;
+  background-color: #F2EFE5;
+  padding: 1rem 2rem;
+}
+.review-body h3 {
+  font-size: larger;
+}
+.date{
+  color: gray;
+  margin-bottom: 2rem;
+}
+.commentBody {
+  font-size: larger;
+}
